@@ -15,12 +15,6 @@
 ## How can users get started with this project
 **Prerequisites:** MYSQL Server 8.0+ / MySQL Workbench
 
- ### Installation Instructions
-  
-  **Installation**
-  1. f
-  2. g
- 
  **QUICK DEPLOYMENT**
 1. Clone the repository locally
 2. Execute *dollys_parlour.sql* to initialise the tables, primary restraints and foreign key relationships
