@@ -12,3 +12,5 @@
  - engineer **special and seasonal menus**
  - automate **predictive inventory restocking**
  - optimise **employee training workflows**
+
+### How can users get started with this project
