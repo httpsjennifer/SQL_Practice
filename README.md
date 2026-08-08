@@ -17,7 +17,18 @@
  ### Intstallation Instructions
   
   **Installation**
-- 1. 
+- 1. f
+  2. g
+ 
+ **Usage**
+
+ **Contribution Guidelines**
+
+ 1. Fork the project
+ 2. Create a feature branch
+ 3. Commit your changes
+ 4. Push into the branch
+ 5. Open a pull request
   
 
 ## Where can users get help with this project
