@@ -34,6 +34,6 @@
 ## Where can users get help with this project
 
 ### Contact
-Jennifer @
+Jennifer - Creator and Main contributor 
 - Email: httpsjennifer@outlook.com
 - Twitter/X: 
