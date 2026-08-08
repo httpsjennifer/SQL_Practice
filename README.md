@@ -2,7 +2,7 @@
 
 ## What is this project for?
  This is a relational database for a chain diner in a videogame.
-It was built with 
+###It was built with 
 - SQL
 
 ### Why is it useful?
