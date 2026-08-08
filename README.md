@@ -14,7 +14,7 @@
  - optimise **employee training workflows**
 
 ## How can users get started with this project
- ### Intstallation Instructions
+ ### Installation Instructions
   
   **Installation**
   1. f
