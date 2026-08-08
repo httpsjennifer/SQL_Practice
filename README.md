@@ -22,7 +22,10 @@
   1. f
   2. g
  
- **Usage**
+ **QUICK DEPLOYMENT**
+1. Clone the repository locally
+2. Execute *dollys_parlour.sql* to initialise the tables, primary restraints and foreign key relationships
+3. Run *mock_seed_data.sql* to populate the tables with 10,000 simulated mid-century transactional logs for analytical query testing
 
  **Contribution Guidelines**
 
