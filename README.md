@@ -9,4 +9,4 @@
  can then be leveraged to 
  - engineer **special and seasonal menus**
  - automate **predictive inventory restocking**
- -optimise **employee training workflows**
+ - optimise **employee training workflows**
