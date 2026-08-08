@@ -1,5 +1,5 @@
 # Dolly's Treetop Parlour
-
+https://img.shields.io/badge/Database-SQL-pink
 ## What is this project for?
  This is a relational database for a chain diner in a videogame.
 ### It was built with 
