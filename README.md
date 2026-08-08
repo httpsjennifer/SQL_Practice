@@ -35,5 +35,5 @@
 
 ### Contact
 Jennifer @
-Email: httpsjennifer@outlook.com
-Twitter/X: 
+- Email: httpsjennifer@outlook.com
+- Twitter/X: 
