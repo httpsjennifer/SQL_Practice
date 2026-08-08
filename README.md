@@ -17,7 +17,7 @@
  ### Intstallation Instructions
   
   **Installation**
- -  1. 
+1. 
   
 
 ## Where can users get help with this project
