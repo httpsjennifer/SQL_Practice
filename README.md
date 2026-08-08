@@ -1,4 +1,4 @@
-# Dolly's Treetop Parlour
+# Dolly's Treetop Parlour | ![status](https://img.shields.io/badge/STATUS:-in_progress-orange?style=for-the-badge)
 ![MySQL](https://img.shields.io/badge/Database-SQL-pink)
 
 ## What is this project for?
