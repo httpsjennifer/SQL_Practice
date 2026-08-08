@@ -33,4 +33,7 @@
 
 ## Where can users get help with this project
 
-### 
+### Contact
+Jennifer 
+Email: httpsjennifer@outlook.com
+Twitter/X: 
