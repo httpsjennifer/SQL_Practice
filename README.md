@@ -6,7 +6,7 @@
 - SQL
 
 ### Why is it useful?
- It is useful because it can be used to track *high level sales metrics*,
+ It is useful because it can be used to track *high-level sales metrics*,
  *customer food modifications* and *physical ingredient depletion*. The data
  can then be leveraged to 
  - engineer **special and seasonal menus**
@@ -14,9 +14,9 @@
  - optimise **employee training workflows**
 
 ## How can users get started with this project
- ### Intstalation Instructions
+ ### Intstallation Instructions
   
-  **Instalation**
+  **Installation**
   1. f
   2. g
  
