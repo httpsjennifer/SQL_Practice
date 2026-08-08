@@ -14,6 +14,8 @@
  - optimise **employee training workflows**
 
 ## How can users get started with this project
+Prerequisites: MYSQL Server 8.0+ / MySQL Workbench
+
  ### Installation Instructions
   
   **Installation**
