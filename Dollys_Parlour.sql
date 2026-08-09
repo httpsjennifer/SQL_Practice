@@ -159,3 +159,24 @@ added_item_2 TEXT,
 added_item_3 TEXT
 );
 
+-- -- (7) The Mother of Pearl Burger: Shrimp Prawn Oyster Button Burger Ingredients
+-- True means keep og ingredient, false + answer means swapped, false + none means removed
+CREATE TABLE the_mop_burger (
+mop_burger_id INTEGER, 
+-- (7.1) Tracking the bun | what is kept swapped or removed
+original_bun BOOLEAN,
+chosen_bun TEXT,
+ -- (7.2) Tracking the chosen protein | what is kept swapped or removed
+shrimp BOOLEAN, 
+chosen_protein TEXT,
+-- (7.3) Tracking the vegetables | what is kept or removed
+lettuce BOOLEAN,
+prawn_pieces BOOLEAN,
+-- (7.4) Tracking the sauce | is it kept swapped or removed
+sriracha_mayo BOOLEAN,
+chosen_sauce TEXT,
+-- (7.5) Tracking the added items 
+added_item_1 TEXT,
+added_item_2 TEXT,
+added_item_3 TEXT
+);
