@@ -240,7 +240,30 @@ ideal_stock_amount INTEGER not null,
 stock_left INTEGER not null
 primary key (ingredients_id)
 );
+-- Entering 'The Button Burger' Table Data
 
+-- (1) Entering 'The Flat Shank Burger' Data
+
+
+-- (2) Entering 'The Quarter Shank Burger' Data
+
+
+-- (3)  Entering 'The Knot Shank Burger' Data
+
+
+-- (4) Entering 'The Cloth Burger' Data
+
+
+-- (5) Entering 'The Full Shank Burger' Data
+
+
+-- (6) Entering 'The Abalone Burger' Data
+
+
+-- (7) Entering 'The Mother of Pearl Burger' Data
+
+
+-- (8) Entering 'The 2-Hole Burger' Data
 -- Ingredient Inventory | Arranged Alphabetically
 
 -- B
