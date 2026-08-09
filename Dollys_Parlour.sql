@@ -241,6 +241,7 @@ stock_left INTEGER not null
 primary key (ingredients_id)
 );
 
+-- Ingredient Inventory
 
 -- B
 -- Entering 'the tracking the ingredients inventory' Data
