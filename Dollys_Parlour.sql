@@ -106,3 +106,34 @@ added_item_1 TEXT,
 added_item_2 TEXT,
 added_item_3 TEXT
 
+-- (5) The Full Shank Burger: Hashbrown Beef and Chicken Button Burger Ingredients
+-- True means keep og ingredient, false + answer means swapped, false + none means removed
+CREATE TABLE the_full_shank_burger  (
+qs_burger_id INTEGER, 
+-- (5.1) Tracking the bun | what is kept swapped or removed
+original_bun BOOLEAN,
+chosen_bun TEXT,
+ -- (5.2) Tracking the chosen protein | what is kept swapped or removed
+beef BOOLEAN, 
+chosen_protein TEXT,
+chicken BOOLEAN,
+chosen_protein_2 TEXT,
+-- (5.3) Tracking the hashbrown | kept or removed
+hashbrown BOOLEAN,
+-- (5.4) Tracking the vegetables and bacon | what is kept or removed
+lettuce BOOLEAN,
+tomato BOOLEAN,
+pickles BOOLEAN,
+bacon BOOLEAN,
+-- (5.5) Tracking the cheese | kept, swapped or removed
+cheese BOOLEAN,
+chosen_cheese TEXT,
+-- (5.6) Tracking the sauces | is it kept swapped or removed
+burger_sauce BOOLEAN,
+chosen_sauce_1 TEXT,
+-- (5.7) Tracking the added items 
+added_item_1 TEXT,
+added_item_2 TEXT,
+added_item_3 TEXT
+
+
