@@ -150,24 +150,26 @@ added_item_3 TEXT
 -- (6) The Abalone Burger: Fish Fillet Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
 CREATE TABLE the_abalone_burger  (
-ta_burger_id INTEGER, 
+customer_id INTEGER not null,
+ta_burger_id INTEGER not null, 
 -- (6.1) Tracking the bun | what is kept swapped or removed
-original_bun BOOLEAN,
-chosen_bun TEXT,
+original_bun BOOLEAN not null,
+chosen_bun TEXT null,
  -- (6.2) Tracking the chosen protein | what is kept swapped or removed
-fish_fillet BOOLEAN, 
-chosen_protein TEXT,
+fish_fillet BOOLEAN not null, 
+chosen_protein TEXT null,
 -- (6.3) Tracking the vegetables | what is kept or removed
-lettuce BOOLEAN,
-cucumber BOOLEAN,
-olives BOOLEAN,
+lettuce BOOLEAN not null,
+cucumber BOOLEAN not null,
+olives BOOLEAN not null,
 -- (6.4) Tracking the sauce | is it kept swapped or removed
-tarte_sauce BOOLEAN,
-chosen_sauce TEXT,
+tarte_sauce BOOLEAN not null,
+chosen_sauce TEXT null,
 -- (6.5) Tracking the added items 
-added_item_1 TEXT,
-added_item_2 TEXT,
-added_item_3 TEXT
+added_item_1 TEXT null,
+added_item_2 TEXT null,
+added_item_3 TEXT null,
+primary key (ta_burger_id)
 );
 
 -- -- (7) The Mother of Pearl Burger: Shrimp Prawn Oyster Button Burger Ingredients
