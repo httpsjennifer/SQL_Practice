@@ -1,10 +1,10 @@
 -- The Button Burger Table
 CREATE TABLE button_burger (
 button_burger_id INTEGER not null, 
-burger_type VARCHAR (30) not null,
+burger_type VARCHAR (150) not null,
 date_sold date not null, 
 store_id INTEGER not null,
-parlour_location VARCHAR (15) not null,
+parlour_location VARCHAR (150) not null,
 num_items_removed INTEGER null,
 num_items_added INTEGER null,
 num_items_swapped INTEGER null,
@@ -72,26 +72,28 @@ primary key (qs_burger_id)
 -- (3) The Knot Shank Burger: Veggie Bean Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
 CREATE TABLE the_knot_shank_burger  (
-ks_burger_id INTEGER, 
+customer_id INTEGER not null,
+ks_burger_id INTEGER not null, 
 -- (3.1) Tracking the bun | what is kept swapped or removed
-original_bun BOOLEAN,
-chosen_bun TEXT,
+original_bun BOOLEAN not null,
+chosen_bun TEXT null,
  -- (3.2) Tracking the chosen protein | what is kept swapped or removed
-bean_burger BOOLEAN, 
-chosen_protein TEXT,
+bean_burger BOOLEAN not null, 
+chosen_protein TEXT null,
 -- (3.3) Tracking the vegetables | what is kept or removed
-lettuce BOOLEAN,
-tomato BOOLEAN,
+lettuce BOOLEAN not null,
+tomato BOOLEAN not null,
 -- (3.4) Tracking the cheese | kept, swapped or removed
-vegan_cheese BOOLEAN,
-chosen_cheese TEXT,
+vegan_cheese BOOLEAN not null,
+chosen_cheese TEXT null,
 -- (3.5) Tracking the sauce | is it kept swapped or removed
-burger_sauce BOOLEAN,
-chosen_sauce TEXT,
+burger_sauce BOOLEAN not null,
+chosen_sauce TEXT null,
 -- (3.6) Tracking the added items 
-added_item_1 TEXT,
-added_item_2 TEXT,
-added_item_3 TEXT
+added_item_1 TEXT null,
+added_item_2 TEXT null,
+added_item_3 TEXT null,
+primary key (ks_burger_id)
 );
 
 -- (4) The Cloth Burger: Falafel Button Burger Ingredients
