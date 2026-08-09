@@ -42,10 +42,10 @@ primary key (fs_burger_id)
 CREATE TABLE  the_quarter_shank_burger   
 (customer_id INTEGER not null,
 qs_burger_id INTEGER not null, 
--- (2.1) Tracking the bun | what is kept swapped or removed
+-- (2.1) Tracking the bun | what is kept, swapped or removed
 original_bun BOOLEAN not null,
 chosen_bun TEXT null,
- -- (2.2) Tracking the chosen protein | what is kept swapped or removed
+ -- (2.2) Tracking the chosen protein | what is kept, swapped or removed
 beef BOOLEAN not null, 
 chosen_protein TEXT null,
 -- (2.3) Tracking the vegetables and bacon | what is kept or removed
@@ -74,7 +74,7 @@ primary key (qs_burger_id)
 CREATE TABLE the_knot_shank_burger  (
 customer_id INTEGER not null,
 ks_burger_id INTEGER not null, 
--- (3.1) Tracking the bun | what is kept swapped or removed
+-- (3.1) Tracking the bun | what is kept, swapped or removed
 original_bun BOOLEAN not null,
 chosen_bun TEXT null,
  -- (3.2) Tracking the chosen protein | what is kept swapped or removed
@@ -99,33 +99,35 @@ primary key (ks_burger_id)
 -- (4) The Cloth Burger: Falafel Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
 CREATE TABLE  the_cloth_burger  (
-tc_burger_id INTEGER, 
--- (4.1) Tracking the bun | what is kept swapped or removed
-pitta_bread BOOLEAN,
-chosen_bun TEXT,
- -- (4.2) Tracking the chosen protein | what is kept swapped or removed
-falafel_burger BOOLEAN, 
-chosen_protein TEXT,
--- (4.3) Tracking the vegetables | what is kept or removed
-lettuce BOOLEAN,
-tomato BOOLEAN,
--- (4.4) Tracking the sauce | is it kept swapped or removed
-burger_sauce BOOLEAN,
-chosen_sauce TEXT,
+customer_id INTEGER not null,
+tc_burger_id INTEGER not null, 
+-- (4.1) Tracking the bun | what is kept, swapped or removed
+pitta_bread BOOLEAN not null,
+chosen_bun TEXT null,
+ -- (4.2) Tracking the chosen protein | what is kept, swapped or removed
+falafel_burger BOOLEAN not null, 
+chosen_protein TEXT null,
+-- (4.3) Tracking the vegetables | what is kept, or removed
+lettuce BOOLEAN not null,
+tomato BOOLEAN not null,
+-- (4.4) Tracking the sauce | is it kept, swapped or removed
+burger_sauce BOOLEAN not null,
+chosen_sauce TEXT null,
 -- (4.5) Tracking the added items 
-added_item_1 TEXT,
-added_item_2 TEXT,
-added_item_3 TEXT
-
+added_item_1 TEXT null,
+added_item_2 TEXT null,
+added_item_3 TEXT null,
+primary key (tc_burger_id)
+);
 -- (5) The Full Shank Burger: Hashbrown Beef and Chicken Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
 CREATE TABLE the_full_shank_burger  (
 customer_id INTEGER not null,
 qs_burger_id INTEGER not null, 
--- (5.1) Tracking the bun | what is kept swapped or removed
+-- (5.1) Tracking the bun | what is kept, swapped or removed
 original_bun BOOLEAN not null,
 chosen_bun TEXT null,
- -- (5.2) Tracking the chosen protein | what is kept swapped or removed
+ -- (5.2) Tracking the chosen protein | what is kept, swapped or removed
 beef BOOLEAN not null, 
 chosen_protein TEXT not null,
 chicken BOOLEAN not null,
@@ -140,7 +142,7 @@ bacon BOOLEAN not null,
 -- (5.5) Tracking the cheese | kept, swapped or removed
 cheese BOOLEAN not null,
 chosen_cheese TEXT null,
--- (5.6) Tracking the sauces | is it kept swapped or removed
+-- (5.6) Tracking the sauces | is it kept, swapped or removed
 burger_sauce BOOLEAN not null,
 chosen_sauce_1 TEXT null,
 -- (5.7) Tracking the added items 
@@ -165,7 +167,7 @@ chosen_protein TEXT null,
 lettuce BOOLEAN not null,
 cucumber BOOLEAN not null,
 olives BOOLEAN not null,
--- (6.4) Tracking the sauce | is it kept swapped or removed
+-- (6.4) Tracking the sauce | is it kept, swapped or removed
 tarte_sauce BOOLEAN not null,
 chosen_sauce TEXT null,
 -- (6.5) Tracking the added items 
@@ -183,13 +185,13 @@ mop_burger_id INTEGER not null,
 -- (7.1) Tracking the bun | what is kept swapped or removed
 original_bun BOOLEAN not null,
 chosen_bun TEXT null,
- -- (7.2) Tracking the chosen protein | what is kept swapped or removed
+ -- (7.2) Tracking the chosen protein | what is kept, swapped or removed
 shrimp BOOLEAN not null, 
 chosen_protein TEXT null,
 -- (7.3) Tracking the vegetables | what is kept or removed
 lettuce BOOLEAN not null,
 prawn_pieces BOOLEAN not null,
--- (7.4) Tracking the sauce | is it kept swapped or removed
+-- (7.4) Tracking the sauce | is it kept, swapped or removed
 sriracha_mayo BOOLEAN not null,
 chosen_sauce TEXT null,
 -- (7.5) Tracking the added items 
@@ -217,7 +219,7 @@ pickles BOOLEAN,
 -- (8.4) Tracking the cheese | kept, swapped or removed
 cheese BOOLEAN not null,
 chosen_cheese TEXT null,
--- (8.5) Tracking the sauce | is it kept swapped or removed
+-- (8.5) Tracking the sauce | is it kept, swapped or removed
 sriracha_mayo BOOLEAN not null,
 chosen_sauce TEXT null,
 -- (8.6) Tracking the added items 
