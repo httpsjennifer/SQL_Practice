@@ -1,13 +1,14 @@
 -- The Button Burger Table
 CREATE TABLE button_burger (
-button_burger_id INTEGER, 
-burger_type TEXT,
-date_sold date, 
-store_id INTEGER,
-parlour_location TEXT,
-num_items_removed INTEGER,
-num_items_added INTEGER,
-num_items_swapped INTEGER
+button_burger_id INTEGER not null, 
+burger_type varchar (30) not null,
+date_sold date not null, 
+store_id INTEGER not null,
+parlour_location varchar (10) not null,
+num_items_removed INTEGER null,
+num_items_added INTEGER null,
+num_items_swapped INTEGER null,
+primary key (button_burger_id)
  );
 -- The Flat Shank Burger: Beef Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
