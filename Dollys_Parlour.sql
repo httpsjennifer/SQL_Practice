@@ -181,6 +181,8 @@ added_item_2 TEXT,
 added_item_3 TEXT
 );
 
+ -- (8) The 2- Hole Burger: Chicken Button Burger Ingredients
+-- True means keep og ingredient, false + answer means swapped, false + none means removed
 CREATE TABLE the_mop_burger (
 mop_burger_id INTEGER, 
 -- (8.1) Tracking the bun | what is kept swapped or removed
