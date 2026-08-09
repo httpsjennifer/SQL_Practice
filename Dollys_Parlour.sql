@@ -222,7 +222,6 @@ primary key (the_two_burger_id)
 
 -- Tracking the ingredients inventory
 CREATE TABLE ingredients_inventory (
-customer_id INTEGER not null,
 store_id INTEGER not null,
 ingredients_id INTEGER not null,
 ingredient TEXT not null,
