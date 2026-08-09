@@ -257,4 +257,5 @@ stock_left
 VALUES (43101,11,'Bacon',1, 'Packet', 200, 50 ),  -- Bow Avenue Branch, Prue (1)
 (43102,12,'Bacon', 1,'Packet',200, 174), -- Candy Lane Branch, Valkton (2)
 (43103,13,'Bacon', 1,'Packet',200,53), -- Bobbin Road Branch, Bun County (3)
-(43104,14, 'Bacon', 1,'Packet',200,94), -- Bobbin Road Branch, Bun County (3)
+(43104,14, 'Bacon', 1,'Packet',200,94), -- Parlour Road Branch, Silverside (4)
+(43105,14, 'Bacon', 1,'Packet',200,194), --  Lace Lane Branch, Wells (5);
