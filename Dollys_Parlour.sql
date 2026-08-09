@@ -220,10 +220,12 @@ added_item_3 TEXT
 
 -- Tracking the ingredients inventory
 CREATE TABLE ingredients_inventory (
-store_id INTEGER,
-ingredients_id INTEGER,
-ingredient TEXT,
-quantity INTEGER,
-measurement TEXT,
-ideal_quantity TEXT
+customer_id INTEGER not null,
+store_id INTEGER not null,
+ingredients_id INTEGER not null,
+ingredient TEXT not null,
+quantity INTEGER not null,
+measurement TEXT not null,
+ideal_quantity TEXT not null,
+primary key (ingredients_id)
 );
