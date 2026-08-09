@@ -240,3 +240,20 @@ ideal_stock_amount INTEGER not null,
 stock_left INTEGER not null
 primary key (ingredients_id)
 );
+
+-- Entering 'the tracking the ingredients inventory' Data
+-- Brioche Buns
+INSERT INTO ingredients_inventory ( 
+store_id,
+ingredients_id,
+ingredient,
+quantity,
+measurement,
+ideal_stock_amount,
+stock_left
+)
+VALUES (43101,11, 'Brioche Buns', 1, 'bag',600, 435), -- Bow Avenue Branch, Prue (1)
+(43102,12,'Brioche Buns', 1, 'bag',600, 565 ), --  Candy Lane Branch, Valkton (2)
+(43103,13, 'Brioche Buns', 1, 'bag',600, 385), -- Bobbin Road Branch, Bun County (3)
+(43104,14, 'Brioche Buns',1, 'bag',600, 175),-- Parlour Road Branch, Silverside (4)
+(43105,15, 'Brioche Buns', 1, 'bag',600, 65); -- Lace Lane Branch, Wells (5)
