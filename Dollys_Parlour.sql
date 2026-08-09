@@ -136,4 +136,26 @@ added_item_1 TEXT,
 added_item_2 TEXT,
 added_item_3 TEXT
 
+-- (6) The Abalone Burger: Fish Fillet Button Burger Ingredients
+-- True means keep og ingredient, false + answer means swapped, false + none means removed
+CREATE TABLE the_abalone_burger  (
+ta_burger_id INTEGER, 
+-- (6.1) Tracking the bun | what is kept swapped or removed
+original_bun BOOLEAN,
+chosen_bun TEXT,
+ -- (6.2) Tracking the chosen protein | what is kept swapped or removed
+fish_fillet BOOLEAN, 
+chosen_protein TEXT,
+-- (6.3) Tracking the vegetables | what is kept or removed
+lettuce BOOLEAN,
+cucumber BOOLEAN,
+olives BOOLEAN,
+-- (6.4) Tracking the sauce | is it kept swapped or removed
+tarte_sauce BOOLEAN,
+chosen_sauce TEXT,
+-- (6.5) Tracking the added items 
+added_item_1 TEXT,
+added_item_2 TEXT,
+added_item_3 TEXT
+);
 
