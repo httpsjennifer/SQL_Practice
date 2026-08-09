@@ -13,23 +13,28 @@ primary key (button_burger_id)
 -- The Flat Shank Burger: Beef Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
 CREATE TABLE the_flat_shank_burger (
-fs_burger_id INTEGER, 
--- Tracking the bun | what is kept swapped or removed
-original_bun BOOLEAN,
-chosen_bun TEXT,
- -- Tracking the chosen protein | what is kept swapped or removed
-beef BOOLEAN, 
-chosen_protein TEXT,
--- Tracking the vegetables | what is kept swapped or removed
-lettuce BOOLEAN,
-tomato BOOLEAN,
--- Tracking the sauce | is it kept swapped or removed
-burger_sauce BOOLEAN,
-chosen_sauce TEXT,
--- Tracking the added items 
-added_item_1 TEXT,
-added_item_2 TEXT,
-added_item_3 TEXT
+customer_id INTEGER not null,
+fs_burger_id INTEGER not null, 
+-- (1.1) Tracking the bun | what is kept, swapped or removed
+original_bun BOOLEAN not null,
+chosen_bun TEXT null,
+ -- (1.2) Tracking the chosen protein | what is kept, swapped or removed
+beef BOOLEAN not null, 
+chosen_protein TEXT null,
+-- (1.3) Tracking the vegetables | what is kept, or removed
+lettuce BOOLEAN not null,
+tomato BOOLEAN not null,
+-- (1.4) Tracking the cheese | kept, swapped or removed
+cheese BOOLEAN not null,
+chosen_cheese TEXT null,
+-- (1.5) Tracking the sauce | is it kept, swapped or removed
+burger_sauce BOOLEAN not null,
+chosen_sauce TEXT null,
+-- (1.6)  Tracking the added items 
+added_item_1 TEXT null,
+added_item_2 TEXT null,
+added_item_3 TEXT null,
+primary key (fs_burger_id)
 );
 
 -- (2) The Quarter Shank Burger: Bacon Cheese-Button Burger Ingredients
