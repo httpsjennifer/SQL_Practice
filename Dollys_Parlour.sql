@@ -194,29 +194,31 @@ added_item_3 TEXT
 
  -- (8) The 2- Hole Burger: Chicken Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
-CREATE TABLE the_mop_burger (
-mop_burger_id INTEGER, 
+CREATE TABLE the_two_hole_burger (
+customer_id INTEGER not null,
+the_two_burger_id INTEGER not null, 
 -- (8.1) Tracking the bun | what is kept swapped or removed
-original_bun BOOLEAN,
-chosen_bun TEXT,
+original_bun BOOLEAN not null,
+chosen_bun TEXT null,
  -- (8.2) Tracking the chosen protein | what is kept swapped or removed
-grilled_chicken BOOLEAN, 
-chosen_protein TEXT,
+grilled_chicken BOOLEAN not null, 
+chosen_protein TEXT null,
 -- (8.3) Tracking the vegetables | what is kept or removed
 lettuce BOOLEAN,
-sundried_tomatoes BOOLEAN,
+sundried_tomatoes BOOLEAN not null,
 pickles BOOLEAN,
 -- (8.4) Tracking the cheese | kept, swapped or removed
-cheese BOOLEAN,
-chosen_cheese TEXT,
+cheese BOOLEAN not null,
+chosen_cheese TEXT null,
 -- (8.5) Tracking the sauce | is it kept swapped or removed
-sriracha_mayo BOOLEAN,
-chosen_sauce TEXT,
+sriracha_mayo BOOLEAN not null,
+chosen_sauce TEXT null,
 -- (8.6) Tracking the added items 
-added_item_1 TEXT,
-added_item_2 TEXT,
-added_item_3 TEXT
-);
+added_item_1 TEXT null,
+added_item_2 TEXT null,
+added_item_3 TEXT null,
+primary key (the_two_burger_id)
+
 
 -- Tracking the ingredients inventory
 CREATE TABLE ingredients_inventory (
