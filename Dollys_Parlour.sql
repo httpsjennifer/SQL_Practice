@@ -59,3 +59,28 @@ added_item_1 TEXT,
 added_item_2 TEXT,
 added_item_3 TEXT
 );
+
+-- (3) The Knot Shank Burger: Veggie Bean Button Burger Ingredients
+-- True means keep og ingredient, false + answer means swapped, false + none means removed
+CREATE TABLE the_knot_shank_burger  (
+ks_burger_id INTEGER, 
+-- (3.1) Tracking the bun | what is kept swapped or removed
+original_bun BOOLEAN,
+chosen_bun TEXT,
+ -- (3.2) Tracking the chosen protein | what is kept swapped or removed
+bean_burger BOOLEAN, 
+chosen_protein TEXT,
+-- (3.3) Tracking the vegetables | what is kept or removed
+lettuce BOOLEAN,
+tomato BOOLEAN,
+-- (3.4) Tracking the cheese | kept, swapped or removed
+vegan_cheese BOOLEAN,
+chosen_cheese TEXT,
+-- (3.5) Tracking the sauce | is it kept swapped or removed
+burger_sauce BOOLEAN,
+chosen_sauce TEXT,
+-- (3.6) Tracking the added items 
+added_item_1 TEXT,
+added_item_2 TEXT,
+added_item_3 TEXT
+);
