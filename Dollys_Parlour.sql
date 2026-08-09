@@ -1,10 +1,10 @@
 -- The Button Burger Table
 CREATE TABLE button_burger (
 button_burger_id INTEGER not null, 
-burger_type varchar (30) not null,
+burger_type VARCHAR (30) not null,
 date_sold date not null, 
 store_id INTEGER not null,
-parlour_location varchar (10) not null,
+parlour_location VARCHAR (15) not null,
 num_items_removed INTEGER null,
 num_items_added INTEGER null,
 num_items_swapped INTEGER null,
