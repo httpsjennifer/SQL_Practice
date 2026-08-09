@@ -204,3 +204,13 @@ added_item_1 TEXT,
 added_item_2 TEXT,
 added_item_3 TEXT
 );
+
+-- Tracking the ingredients inventory
+CREATE TABLE ingredients_inventory (
+store_id INTEGER,
+ingredients_id INTEGER,
+ingredient TEXT,
+quantity INTEGER,
+measurement TEXT,
+ideal_quantity TEXT
+);
