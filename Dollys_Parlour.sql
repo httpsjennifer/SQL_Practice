@@ -180,3 +180,27 @@ added_item_1 TEXT,
 added_item_2 TEXT,
 added_item_3 TEXT
 );
+
+CREATE TABLE the_mop_burger (
+mop_burger_id INTEGER, 
+-- (8.1) Tracking the bun | what is kept swapped or removed
+original_bun BOOLEAN,
+chosen_bun TEXT,
+ -- (8.2) Tracking the chosen protein | what is kept swapped or removed
+grilled_chicken BOOLEAN, 
+chosen_protein TEXT,
+-- (8.3) Tracking the vegetables | what is kept or removed
+lettuce BOOLEAN,
+sundried_tomatoes BOOLEAN,
+pickles BOOLEAN,
+-- (8.4) Tracking the cheese | kept, swapped or removed
+cheese BOOLEAN,
+chosen_cheese TEXT,
+-- (8.5) Tracking the sauce | is it kept swapped or removed
+sriracha_mayo BOOLEAN,
+chosen_sauce TEXT,
+-- (8.6) Tracking the added items 
+added_item_1 TEXT,
+added_item_2 TEXT,
+added_item_3 TEXT
+);
