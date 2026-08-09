@@ -39,32 +39,35 @@ primary key (fs_burger_id)
 
 -- (2) The Quarter Shank Burger: Bacon Cheese-Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
-CREATE TABLE  the_quarter_shank_burger   (
-qs_burger_id INTEGER, 
+CREATE TABLE  the_quarter_shank_burger   
+(customer_id INTEGER not null,
+qs_burger_id INTEGER not null, 
 -- (2.1) Tracking the bun | what is kept swapped or removed
-original_bun BOOLEAN,
-chosen_bun TEXT,
+original_bun BOOLEAN not null,
+chosen_bun TEXT null,
  -- (2.2) Tracking the chosen protein | what is kept swapped or removed
-beef BOOLEAN, 
-chosen_protein TEXT,
+beef BOOLEAN not null, 
+chosen_protein TEXT null,
 -- (2.3) Tracking the vegetables and bacon | what is kept or removed
-lettuce BOOLEAN,
-tomato BOOLEAN,
-pickles BOOLEAN,
-bacon BOOLEAN,
+lettuce BOOLEAN not null,
+tomato BOOLEAN not null,
+pickles BOOLEAN not null,
+bacon BOOLEAN not null,
 -- (2.4) Tracking the cheese | kept, swapped or removed
-cheese BOOLEAN,
-chosen_cheese TEXT,
+cheese BOOLEAN not null,
+chosen_cheese TEXT null,
 -- (2.5) Tracking the sauces | is it kept swapped or removed
-burger_sauce BOOLEAN,
-tomato_sauce BOOLEAN,
-chosen_sauce_1 TEXT,
-chosen_sauce_2 TEXT,
+burger_sauce BOOLEAN not null,
+chosen_sauce_1 TEXT null,
+tomato_sauce BOOLEAN not null,
+chosen_sauce_2 TEXT null,
 -- (2.6) Tracking the added items 
-added_item_1 TEXT,
-added_item_2 TEXT,
-added_item_3 TEXT
+added_item_1 TEXT null,
+added_item_2 TEXT null,
+added_item_3 TEXT null,
+primary key (qs_burger_id)
 );
+
 
 -- (3) The Knot Shank Burger: Veggie Bean Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
