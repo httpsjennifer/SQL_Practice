@@ -84,3 +84,25 @@ added_item_1 TEXT,
 added_item_2 TEXT,
 added_item_3 TEXT
 );
+
+-- (4) The Cloth Burger: Falafel Button Burger Ingredients
+-- True means keep og ingredient, false + answer means swapped, false + none means removed
+CREATE TABLE  the_cloth_burger  (
+tc_burger_id INTEGER, 
+-- (4.1) Tracking the bun | what is kept swapped or removed
+pitta_bread BOOLEAN,
+chosen_bun TEXT,
+ -- (4.2) Tracking the chosen protein | what is kept swapped or removed
+falafel_burger BOOLEAN, 
+chosen_protein TEXT,
+-- (4.3) Tracking the vegetables | what is kept or removed
+lettuce BOOLEAN,
+tomato BOOLEAN,
+-- (4.4) Tracking the sauce | is it kept swapped or removed
+burger_sauce BOOLEAN,
+chosen_sauce TEXT,
+-- (4.5) Tracking the added items 
+added_item_1 TEXT,
+added_item_2 TEXT,
+added_item_3 TEXT
+
