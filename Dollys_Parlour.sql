@@ -173,23 +173,25 @@ added_item_3 TEXT
 -- -- (7) The Mother of Pearl Burger: Shrimp Prawn Oyster Button Burger Ingredients
 -- True means keep og ingredient, false + answer means swapped, false + none means removed
 CREATE TABLE the_mop_burger (
-mop_burger_id INTEGER, 
+customer_id INTEGER not null,
+mop_burger_id INTEGER not null, 
 -- (7.1) Tracking the bun | what is kept swapped or removed
-original_bun BOOLEAN,
-chosen_bun TEXT,
+original_bun BOOLEAN not null,
+chosen_bun TEXT null,
  -- (7.2) Tracking the chosen protein | what is kept swapped or removed
-shrimp BOOLEAN, 
-chosen_protein TEXT,
+shrimp BOOLEAN not null, 
+chosen_protein TEXT null,
 -- (7.3) Tracking the vegetables | what is kept or removed
-lettuce BOOLEAN,
-prawn_pieces BOOLEAN,
+lettuce BOOLEAN not null,
+prawn_pieces BOOLEAN not null,
 -- (7.4) Tracking the sauce | is it kept swapped or removed
-sriracha_mayo BOOLEAN,
-chosen_sauce TEXT,
+sriracha_mayo BOOLEAN not null,
+chosen_sauce TEXT null,
 -- (7.5) Tracking the added items 
-added_item_1 TEXT,
-added_item_2 TEXT,
-added_item_3 TEXT
+added_item_1 TEXT null,
+added_item_2 TEXT null,
+added_item_3 TEXT null,
+primary key (mop_burger_id)
 );
 
  -- (8) The 2- Hole Burger: Chicken Button Burger Ingredients
