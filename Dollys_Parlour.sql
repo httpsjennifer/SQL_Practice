@@ -237,5 +237,6 @@ ingredient TEXT not null,
 quantity INTEGER not null,
 measurement TEXT not null,
 ideal_stock_amount TEXT not null,
+stock_left INTEGER not null
 primary key (ingredients_id)
 );
