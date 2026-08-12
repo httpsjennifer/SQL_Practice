@@ -1,5 +1,5 @@
 # Dolly's Treetop Parlour | ![status](https://img.shields.io/badge/STATUS:-in_progress-purple?style=for-the-badge)
-![MySQL](https://img.shields.io/badge/Database-SQL-pink)
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) 
 
 ## What is this project for?
  This is a relational database for a chain diner in a videogame.
